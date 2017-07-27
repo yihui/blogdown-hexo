@@ -1,0 +1,21 @@
+language: node_js
+
+cache:
+  directories:
+    - "node_modules"
+
+before_script:
+  - npm install -g hexo-cli
+  - npm install
+
+script:
+  - hexo generate
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master
+  local_dir: public
+  fqdn: hexo.yihui.name
