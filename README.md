@@ -2,7 +2,11 @@
 
 A sample website based on [**blogdown**](https://github.com/rstudio/blogdown) and [Hexo](https://hexo.io). It is briefly documented at https://bookdown.org/yihui/blogdown/hexo.html.
 
-The site was created via `hexo init blogdown-hexo`. I added `.Rprofile`, `R/build.R`, `R/build_one.R`, and a sample post `source/_posts//2015-07-23-r-rmarkdown.Rmd`. The site is built and deployed automatically via [Travis CI](https://travis-ci.org/yihui/blogdown-hexo). To build and preview the site locally, you need to install **blogdown**:
+The site was created via `hexo init blogdown-hexo`. I added `.Rprofile`, `R/build.R`, `R/build_one.R`, and a sample post `source/_posts//2015-07-23-r-rmarkdown.Rmd`. The site is built and deployed automatically via [Netlify](https://www.netlify.com). Below are the settings on Netlify:
+
+![hexo-netlify](https://user-images.githubusercontent.com/163582/28689730-2fdbb386-72dc-11e7-83e0-b0bdafed4786.png)
+
+To build and preview the site locally, you need to install **blogdown**:
 
 ```r
 devtools::install_github("rstudio/blogdown")
