@@ -12,3 +12,9 @@ To build and preview the site locally, you need to install **blogdown**:
 devtools::install_github("rstudio/blogdown")
 blogdown::serve_site()
 ```
+
+To use pandoc rather than knitr to render the markdown (will process citations), change line 6 of R/build.R to:
+
+```r
+  if (blogdown:::Rscript(shQuote(c('R/build_one_pandoc.R', io))) != 0) {
+```
