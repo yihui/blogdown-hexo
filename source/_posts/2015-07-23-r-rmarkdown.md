@@ -4,13 +4,16 @@ author: "Frida Gomam"
 date: 2015-07-23
 categories: ["R"]
 tags: ["R Markdown", "plot", "regression"]
+bibliography: test.bib
 ---
 
 
 
 # R Markdown
 
-This is an R Markdown document. Please note this page was **not** rendered using the [**rmarkdown**]( http://rmarkdown.rstudio.com) package or [Pandoc](http://pandoc.org). The R Markdown document is compiled to Markdown through **knitr**, and the Markdown document is rendered to HTML through [Hexo's Markdown renderer](https://github.com/hexojs/hexo-renderer-marked).
+Here are some citations to render : [@article; @book; @booklet]. This will work if you are using the build_one_pandoc function.
+
+This is an R Markdown document. Please note - if using build_one.R then this page was **not** rendered using the [**rmarkdown**]( http://rmarkdown.rstudio.com) package or [Pandoc](http://pandoc.org). The R Markdown document is compiled to Markdown through **knitr**, and the Markdown document is rendered to HTML through [Hexo's Markdown renderer](https://github.com/hexojs/hexo-renderer-marked).
 
 You can embed an R code chunk like this:
 
@@ -51,3 +54,5 @@ pie(
 ```
 
 ![](/figure/posts/2015-07-23-r-rmarkdown/pie-1.png)
+
+# References
