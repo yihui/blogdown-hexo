@@ -15,4 +15,7 @@ local({
   options(digits = 4)
   knitr::opts_knit$set(width = 70)
   knitr::knit(a[1], a[2], quiet = TRUE, encoding = 'UTF-8', envir = .GlobalEnv)
+  # process citations through Pandoc
+  x = blogdown:::process_markdown(a[2])
+  xfun::write_utf8(x, a[2])
 })
